@@ -14,14 +14,23 @@ function createButtonWithClass(className, content = "") {
   return button;
 }
 
+// 1 header
+const headerDiv = createDivWithClass("header");
+headerDiv.textContent="Etch a Scretch";
+containerDiv.appendChild(headerDiv);
+
 // 1 big content
 const bigContentDiv = createDivWithClass("bigContent");
 containerDiv.appendChild(bigContentDiv);
 
 // 2 menü
 const menuDiv = createDivWithClass("menu");
-menuDiv.textContent = "menu";
 bigContentDiv.appendChild(menuDiv);
+
+
+const colorHeaderDiv = createDivWithClass("colorHeader");
+colorHeaderDiv.textContent="Choose Your Color";
+menuDiv.appendChild(colorHeaderDiv);
 
 // 3 color button
 const colorInput = document.createElement("input");
@@ -30,6 +39,7 @@ colorInput.classList.add("form-control", "form-control-color", "color");
 colorInput.id = "exampleColorInput";
 colorInput.value = "black"; // Set a default color value
 colorInput.title = "Choose your color";
+colorInput.textContent="chose"
 menuDiv.appendChild(colorInput);
 
 // 3 rainbow button
@@ -39,7 +49,7 @@ menuDiv.appendChild(rainbowButton);
 
 // 3 gray button
 const grayButton = createButtonWithClass("gray");
-grayButton.textContent = "gray";
+grayButton.textContent = "clear";
 menuDiv.appendChild(grayButton);
 
 // 3 eraser button
@@ -69,7 +79,7 @@ rangeInput.id = "customRange1";
 rangeInput.min = 1;
 rangeInput.max = 7;
 rangeInput.step = 1;
-rangeInput.style.accentColor = "#A5A6F6";
+rangeInput.style.accentColor = "#ACFADF";
 rangeInput.style.border = "none";
 scrollDiv.appendChild(rangeInput);
 
