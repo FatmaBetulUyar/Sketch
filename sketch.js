@@ -17,6 +17,12 @@ function createButtonWithClass(className, content = "") {
 // 1 header
 const headerDiv = createDivWithClass("header");
 headerDiv.textContent = "Etch a Scretch";
+// 1 header img
+const headerImg = document.createElement("img");
+headerImg.src="https://cdn-icons-png.flaticon.com/512/3199/3199899.png"
+headerImg.alt="header";
+headerDiv.appendChild(headerImg);
+
 containerDiv.appendChild(headerDiv);
 
 // 1 big content

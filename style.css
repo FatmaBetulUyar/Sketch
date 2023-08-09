@@ -26,6 +26,7 @@ body, html {
     border-radius: 30px;
     border:none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 10px;
 }
 .menu{
     background-color:#FBA1B7;
@@ -136,8 +137,9 @@ button{
     border-radius: 30px;
     margin: 20px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
@@ -147,4 +149,9 @@ button{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-align: center;
+}
+
+img{
+    width:10%;
+    height:11vh;
 }
